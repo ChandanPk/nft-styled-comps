@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    /* border: 2px solid #fff; */
+    text-align: center;
+}
+
+.musicImgContainer {
+    width: 1000px;
+    margin: auto;
+}
+
+.imgTag {
+    margin-right: 3em;
+    width: 95%;
+    height: 100%;
+}
