@@ -21,7 +21,7 @@
 }
 
 .navItem:hover {
-    transition: .3s;
+    transition: .1s;
     background-color: #444;
     cursor: pointer;
 }
