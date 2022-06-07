@@ -18,7 +18,7 @@ const Points = () => {
                         return <div className={styles.player}>
                             <div className={styles.names}>
                                 <p className={styles.index}>1</p>
-                                <p className={styles.name}>Naughty America</p>
+                                <p className={styles.name}>George W. Bush</p>
                             </div>
                             <div className={styles.point}>POINTS</div>
                         </div>
