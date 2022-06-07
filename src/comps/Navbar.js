@@ -2,6 +2,7 @@
 import Login from './Login'
 import { useState } from "react";
 import styles from '../styles/Navbar.module.css'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     // const NavButton = styled(Button)({
     //     backgroundColor: "#555",
     //     display: "inline-block",
-    //     height: "100%",
+    //     height: "100%"',
     //     "&:hover": {
     //         backgroundColor: "#fff",
     //         color: "#111"
@@ -22,16 +23,17 @@ const Navbar = () => {
     return (
         <div className={styles.navContainer}>
             <div className={styles.rightNavItems}>
-                <div className={styles.navItem}>BUY NFT</div>
-                <div className={styles.navItem}>MUSIC NFT</div>
+                <Link class="links" to="/"><div className={styles.navItem}>Home</div></Link>
+                <Link class="links" to="/street"><div className={styles.navItem}>Street NFT</div></Link>
+                <Link class="links" to="/music"><div className={styles.navItem}>MUSIC NFT</div></Link>
             </div>
-            
+
             <div className={styles.rightNavItems}>
-                <div className={styles.navItem}>SHA POINTS</div>
+                <Link to="/score" className="links"><div className={styles.navItem}>SHA POINTS</div></Link>
                 <div className={styles.navItem} onClick={handleOpen}>STREET SHA TOKENS</div>
             </div>
             <Login handleClose={handleClose} open={open} />
-        </div >
+        </div>
 
     );
 }

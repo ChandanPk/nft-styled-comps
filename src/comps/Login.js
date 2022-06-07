@@ -20,7 +20,7 @@ const Login = ({ open, handleClose }) => {
                         }}>
                             <LockIcon sx={{marginTop: '6px'}} />
                         </Avatar>
-                        <Typography component="h1" variant="h5">
+                        <Typography component="h1" variant="h5" sx={{color: "#111"}}>
                             Sign up
                         </Typography>
                     {/* </div> */}
